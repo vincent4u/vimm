@@ -1,29 +1,28 @@
 
 import './App.css'
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
+
+import HomePage from './Homepage.jsx'
+import AboutUs from './AboutUs.jsx'
+import { Routes,Route } from "react-router-dom"
+import BookingPage from './BookingPage.jsx'
 
 function App() {
 
   return (
     <>
-    <Header/>
-    <main>
-      <HomePage />
-    </main>
-    <Footer/>
+  
+      <main>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<AboutUs />} />
+          <Route path='/booking' element={<BookingPage />} />
+        </Routes>
+      </main>
+
     </>
   )
 }
 
-function HomePage() {
-  return (
-    <>
-    <h2>Welcome to React Router!</h2>
-    <h2> Hompage</h2>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, et laborum accusamus fugiat repellat dolorem eligendi! Hic sint provident similique minus maxime, facilis omnis fugit nulla est, quam iure mollitia.
-    </>
-  )
-}
+
 
 export default App

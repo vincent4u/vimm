@@ -61,25 +61,27 @@ body {
     "header"
     "main"
     "footer";
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("src/assets/icons_assets/restaurant.jpg");
-  background-size: cover;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("src/assets/icons_assets/restaurant.jpg"); */
+  /* background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
-
+a {
+  color: var(--color-primary-second);
+  text-decoration: none;
+}
 header {
   grid-area: header;
-  opacity: 0.75;
+
   background-color: var(--color-bg);
-  width: 100%;
+
   font: var(--font-heading);
 }
 main {
   grid-area: main;
   color: aliceblue;
-  width: 100%;
 }
 footer {
   grid-area: footer;
@@ -88,9 +90,45 @@ footer {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.6);
   background-color: #213547;
-  width: 100%;
+}
+header {
+  width: 100vw; /* viewport width */
+  left: 0;
+  right: 0;
+  position: fixed; /* or fixed if you want sticky */ /* semi-transparent background without affecting children */
+}
+footer {
+  width: 100vw; /* viewport width */
+  left: 0;
+  right: 0;
 }
 
+.header_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: start;
+  padding: 10px;
+  gap: 80px;
+}
+
+.navigate_links ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+.navigate_links ul li a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: bold;
+  padding: 5px 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navigate_links ul li a:hover {
+  background-color: var(--color-primary-second);
+  color: var(--color-bg);
+  border-radius: 5px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     --color-bg: #ffffff;
@@ -101,5 +139,20 @@ footer {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+@media (max-width: 700px) {
+  .grid-adjustable-columns {
+    display: grid;
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width: 701px) {
+  .grid-adjustable-columns {
+    width: min(1000px, 75rem);
+    margin: 0 auto;
+    grid-auto-flow: column;
+    gap: 1em;
   }
 }
