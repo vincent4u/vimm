@@ -1,15 +1,21 @@
+import { Link } from "react-router-dom"
+
+
 function Navigation_bar() {
     return (
         <>
+        <div className="header_box">
          <img src="src\assets\icons_assets\Logo .svg" className="App-logo" alt="logo" />
       
-      <nav>
+      <nav className="navigate_links">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about"><a href="#about"> About </a></Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/booking">Booking</Link></li>
         </ul>
       </nav>
+      </div>
         </>
     )
 }
