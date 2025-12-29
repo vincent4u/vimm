@@ -1,0 +1,128 @@
+/* =========================
+   Booking Page Layout
+========================= */
+
+.booking-page {
+  min-height: 100vh;
+  padding: 6rem 1rem;
+  background: linear-gradient(180deg, #f8f9fa, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.booking-container {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   Headings & Text
+========================= */
+
+.booking-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2d3436;
+  text-align: center;
+}
+.booking-container h5 {
+  text-align: center;
+}
+
+.booking-container p {
+  font-size: 0.95rem;
+  color: #636e72;
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   Form Layout
+========================= */
+
+.booking-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.booking-form label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #dfe6e9;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  outline: none;
+  border-color: #495e57;
+  box-shadow: 0 0 0 3px rgba(73, 94, 87, 0.15);
+}
+
+/* =========================
+   Submit Button
+========================= */
+
+.booking-form button,
+.booking-form input[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #f4ce14;
+  color: #2d3436;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.booking-form button:hover,
+.booking-form input[type="submit"]:hover {
+  background-color: #e1be10;
+  transform: translateY(-1px);
+}
+
+.booking-form button:active,
+.booking-form input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   Disabled / Validation
+========================= */
+
+.booking-form input:disabled,
+.booking-form select:disabled {
+  background-color: #f1f2f6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 480px) {
+  .booking-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .booking-container h1 {
+    font-size: 1.75rem;
+  }
+}

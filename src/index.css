@@ -40,8 +40,8 @@
 }
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
 }
 
@@ -81,7 +81,13 @@ header {
 }
 main {
   grid-area: main;
-  color: aliceblue;
+  color: #121212;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--color-bg);
+  height: 100vh;
+  width: 100vw;
 }
 footer {
   grid-area: footer;
@@ -129,6 +135,26 @@ footer {
   color: var(--color-bg);
   border-radius: 5px;
 }
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="submit"],
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: var(--text-base);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --color-bg: #ffffff;

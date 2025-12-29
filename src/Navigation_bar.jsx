@@ -10,7 +10,7 @@ function Navigation_bar() {
       <nav className="navigate_links">
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/about"><a href="#about"> About </a></Link></li>
+          <li><Link to="/about"> About </Link></li>
             <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/booking">Booking</Link></li>
         </ul>
