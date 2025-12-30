@@ -67,7 +67,10 @@ const BookingPage = () => {
   };
 
  return (
+  <>
+  <Header/>
     <div className="booking-page">
+      
       <div className="booking-container">
         <BookingForm
           availableTimes={state.availableTimes}
@@ -77,6 +80,8 @@ const BookingPage = () => {
         />
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
