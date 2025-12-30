@@ -1,16 +1,87 @@
-# React + Vite
+🍋 Little Lemon Table Reservation App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, accessible table reservation application built with React, showcasing professional front-end engineering practices including state management, form validation, accessibility, and unit testing.
 
-Currently, two official plugins are available:
+🔍 Project Summary
+This application allows users to reserve a table by selecting:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Date
+Available time
+Number of guests
+Occasion
 
-## React Compiler
+It was developed as part of the Meta Front-End Developer Professional Certificate (Coursera) and enhanced to reflect real-world, production-level standards.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🚀 Live Features
 
-## Expanding the ESLint configuration
+📅 Dynamic date-based available time slots
+⏰ Time selection driven by application state (Reducer pattern)
+🧍 Guest count and occasion selection
+✅ HTML5 and React-based form validation
+🔒 Disabled submission when form is invalid
+♿ Accessibility-friendly form markup (labels, semantic HTML)
+🧪 Comprehensive unit testing with Vitest & React Testing Library
+🎨 Modern, responsive, and professional UI design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠 Tech Stack
+
+React (Hooks, Functional Components)
+useReducer and useState for state management
+React Router for navigation
+CSS (modern, responsive UI) for styling
+Vitest & React Testing Library for unit testing
+HTML5 + React validation
+Accessibility-first form design (WCAG-aligned form semantics)
+
+✨ Key Features
+
+Dynamic available times based on selected date
+Centralized state management with reducer pattern
+HTML5 & client-side form validation
+Disabled submit button when form is invalid
+Accessible, semantic form markup (WCAG-friendly)
+Modern, responsive form UI
+Comprehensive unit test coverage
+
+🧪 Testing
+
+The project includes unit tests for:
+
+Reducer logic
+HTML validation attributes
+Client-side validation (valid & invalid states)
+Form submission behavior
+
+Run tests with:
+
+npm test
+
+▶️ Running the Project
+git clone https://github.com/your-username/little-lemon-reservation.git
+cd little-lemon-reservation
+npm install
+npm run dev
+
+
+App runs at:
+
+http://localhost:5173
+
+📂 Project Highlights 
+
+✔ Clean component architecture
+✔ Predictable state management
+✔ Strong validation & UX handling
+✔ Accessibility-aware development
+✔ Test-driven mindset
+✔ Production-quality documentation
+
+👤 Author
+
+Vincent Nnamdi Ugwah
+MSc Artificial Intelligence
+Front-End Engineer
+
+📜 License
+
+Educational and portfolio use.
